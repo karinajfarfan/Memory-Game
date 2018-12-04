@@ -30,12 +30,30 @@ body {
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
 }
 
-/*
- * Styles for the deck of cards
- */
+/* Styles for modal*/
+
+.modal {
+    position: absolute;
+    top: 153px;
+    width: 610px;
+    min-height: 600px;
+    padding: 32px;
+    font-size: 3em;
+    z-index: 1;
+    background-color: rgba(200,200,200,0.5);
+    text-align: center;
+}
+.modal.show {
+    display: block;
+}
+.modal.hide {
+    display: none;
+}
+
+/* Styles for the deck of cards */
 
 .deck {
     width: 660px;
@@ -81,9 +99,7 @@ h1 {
     font-size: 33px;
 }
 
-/*
- * Styles for the Score Panel
- */
+/* Styles for the Score Panel */
 
 .score-panel {
     text-align: left;
